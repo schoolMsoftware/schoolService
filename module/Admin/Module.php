@@ -10,7 +10,6 @@
 
 namespace Admin;
 
-use Zend\Session\Container;
 use Zend\ModuleManager\Feature\AutoloaderProviderInterface;
 use Zend\ModuleManager\Feature\ConfigProviderInterface;
 use Zend\Db\ResultSet\ResultSet;
@@ -18,8 +17,6 @@ use Zend\Db\TableGateway\TableGateway;
 use Admin\Model\UserTable;
 use Zend\Authentication\Adapter\DbTable as DbAuthAdapter;
 use Zend\Authentication\AuthenticationService;
-use Zend\Mvc\ModuleRouteListener;
-use Zend\Mvc\MvcEvent;
 
 class Module implements AutoloaderProviderInterface, ConfigProviderInterface {
     public function getAutoloaderConfig() {
